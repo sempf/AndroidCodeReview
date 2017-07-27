@@ -23,7 +23,7 @@ VERSION
 
 import os
 with open("C:/Temp/result.txt", "w") as results:
-    for root, dirs, files in os.walk("C:/Temp/project", topdown=False):
+    for root, dirs, files in os.walk("C:\\temp\\project", topdown=False):
         for filename in files:
             with open(os.path.join(root,filename)) as currentFile:
                 text = currentFile.read()
